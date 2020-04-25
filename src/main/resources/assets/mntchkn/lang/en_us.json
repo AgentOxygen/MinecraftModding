@@ -1,4 +1,5 @@
 {
+	"item.mntchkn.example_item": "Example Item",
 	"item.mntchkn.peat_item": "Peat",
 	"item.mntchkn.anthracite_item": "Anthracite Coal",
 	"item.mntchkn.bituminous_coal_item": "Bituminous Coal",
@@ -11,6 +12,7 @@
 	"item.mntchkn.corundum_item": "Corundum",
 	"item.mntchkn.salt_dust_item": "Salt",
 	
+	"block.mntchkn.example_block": "Example Block",
 	"block.mntchkn.peat_ore_block": "Peat Ore",
 	"block.mntchkn.anthracite_coal_ore_block": "Anthracite Coal Ore",
 	"block.mntchkn.argentite_ore_block": "Argentite Ore",

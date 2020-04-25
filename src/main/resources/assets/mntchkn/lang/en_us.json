@@ -1,0 +1,33 @@
+{
+	"item.mntchkn.peat_item": "Peat",
+	"item.mntchkn.anthracite_item": "Anthracite Coal",
+	"item.mntchkn.bituminous_coal_item": "Bituminous Coal",
+	"item.mntchkn.steel_ingot_item": "Steel Ingot",
+	"item.mntchkn.copper_ingot_item": "Copper Ingot",
+	"item.mntchkn.topaz_item": "Topaz",
+	"item.mntchkn.zinc_ingot_item": "Zinc Ingot",
+	"item.mntchkn.sulfur_dust_item": "Sulfur Dust",
+	"item.mntchkn.thorium_dust_item": "Thorium Dust",
+	"item.mntchkn.corundum_item": "Corundum",
+	"item.mntchkn.salt_dust_item": "Salt",
+	
+	"block.mntchkn.peat_ore_block": "Peat Ore",
+	"block.mntchkn.anthracite_coal_ore_block": "Anthracite Coal Ore",
+	"block.mntchkn.argentite_ore_block": "Argentite Ore",
+	"block.mntchkn.bituminous_coal_ore_block": "Bituminous Coal Ore",
+	"block.mntchkn.cinnabar_ore_block": "Cinnabar Ore",
+	"block.mntchkn.cobalt_ore_block": "Cobalt Ore",
+	"block.mntchkn.corundum_ore_block": "Corundum Ore",
+	"block.mntchkn.cuprite_ore_block": "Cuprite Ore",
+	"block.mntchkn.hematite_ore_block": "Hematite Ore",
+	"block.mntchkn.magnetite_ore_block": "Magnetite Ore",
+	"block.mntchkn.malachite_ore_block": "Malachite Ore",
+	"block.mntchkn.monazite_ore_block": "Monazite Ore",
+	"block.mntchkn.rock_salt_block": "Rock Salt",
+	"block.mntchkn.siderite_ore_block": "Siderite Ore",
+	"block.mntchkn.sphalerite_ore_block": "Sphalerite Ore",
+	"block.mntchkn.topaz_ore_block": "Topaz Ore",
+	"block.mntchkn.uraninite_ore_block": "Uraninite Ore",
+	
+	"itemGroup.mntchkn": "Mountain Chicken"
+}

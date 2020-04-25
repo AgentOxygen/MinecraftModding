@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mntchkn:malachite_ore_block"
+  },
+  "result": 
+  {
+  	"item": "minecraft:iron_ingot",
+  	"count": 4
+  },
+  "experience": 3.5,
+  "cookingtime": 200
+}

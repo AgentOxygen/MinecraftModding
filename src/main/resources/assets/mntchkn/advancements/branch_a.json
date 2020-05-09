@@ -1,0 +1,15 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stick"
+        },
+        "title": "Branch 1",
+        "description": "One branch of the tree."
+    },
+    "parent": "mntchkn:root",
+    "criteria": {
+        "auto": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

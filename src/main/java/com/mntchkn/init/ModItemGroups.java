@@ -6,7 +6,6 @@ import com.mntchkn.main.Main;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 
 public class ModItemGroups{
 	public static class ModItemGroup extends ItemGroup{

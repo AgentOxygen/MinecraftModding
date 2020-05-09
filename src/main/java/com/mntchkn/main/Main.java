@@ -3,7 +3,8 @@ package com.mntchkn.main;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.mntchkn.init.ModBlocks;
+import com.mntchkn.cam.CamsBlocks;
+import com.mntchkn.will.WillsBlocks;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -22,6 +23,7 @@ public class Main {
 		final ModLoadingContext mlc = ModLoadingContext.get();
 		final IEventBus meb = FMLJavaModLoadingContext.get().getModEventBus();
 		
-		ModBlocks.BLOCKS.register(meb);
+		CamsBlocks.BLOCKS.register(meb);
+		WillsBlocks.BLOCKS.register(meb);
 	}
 }

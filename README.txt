@@ -6,7 +6,7 @@ All files should be added to folders under
 
 src/main/resources/assets/mntchkn
 
-Which will be abbreviated as assets.mntchkn
+Which will be abbreviated as "assets.mntchkn"
 
 ------------------------------
 
@@ -73,3 +73,6 @@ After downloading, to setup your workspace and run configs follow these instruct
 
 Consult https://mcforge.readthedocs.io/en/latest/ for official forge documentation
 There are also a bunch of tutorials and online help that you can find through Google.
+
+When coding, you will be given your own dedicated package for adding stuff. 
+The main classes should be left alone if at all possible in order to avoid conflicts.

@@ -53,3 +53,23 @@ For adding Language Translate
 
 	1) Open "en_us.json" under the "assets.mntchkn.lang" package
 	2) Add line for item or block based on example provided.
+	
+	
+------------------------------
+For Coding Authors
+------------------------------
+
+Use git-pull to download this repository. 
+Request access to contribute by asking Cameron on Discord or through text.
+
+After downloading, to setup your workspace and run configs follow these instructions:
+
+	1) Open a command prompt or Power Shell window in the project folder
+	2) Execute "./gradlew genEclipseRuns" or "./gradlew genIntellijRuns" if you use Intellij to create run configurations
+	3) Test the project to see if it builds properly and runs
+	4) Execute "./graldew --refresh-dependencies" and "./gradlew clean" to refresh and reset libraries (will not affect code)
+	5) Execute "./gradlew eclipse" to rebuild the project entirely (will not affect code)
+	6) You may have to do steps 4 and 5 multiple times to fix a building issue
+
+Consult https://mcforge.readthedocs.io/en/latest/ for official forge documentation
+There are also a bunch of tutorials and online help that you can find through Google.

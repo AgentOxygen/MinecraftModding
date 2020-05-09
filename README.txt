@@ -13,7 +13,7 @@ Which will be abbreviated as assets.mntchkn
 For adding Item Textures:
 
 	1) Use .png only
-	2) Picture size (in pixels) must be one of the following:
+	2) Picture size (in pixels) must be one of the following or of a similar 8x8 ratio:
 		8x8
 		16x16 -- Preferred
 		32x32
@@ -26,7 +26,7 @@ For adding Item Textures:
 For adding Block Textures:
 
 	1) Use .png only
-	2) Picture size (in pixels) must be one of the following:
+	2) Picture size (in pixels) must be one of the following or of a similar 8x8 ratio:
 		8x8
 		16x16 -- Preferred
 		32x32

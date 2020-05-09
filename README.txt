@@ -2,6 +2,14 @@
 For Texture and JSON Authors
 ------------------------------
 
+All files should be added to folders under
+
+src/main/resources/assets/mntchkn
+
+Which will be abbreviated as assets.mntchkn
+
+------------------------------
+
 For adding Item Textures:
 
 	1) Use .png only

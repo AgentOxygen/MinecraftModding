@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.mntchkn.cam.CamsBlocks;
+import com.mntchkn.max.MaxsBlocks;
 import com.mntchkn.will.WillsBlocks;
 
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,5 +26,6 @@ public class Main {
 		
 		CamsBlocks.BLOCKS.register(meb);
 		WillsBlocks.BLOCKS.register(meb);
+		MaxsBlocks.BLOCKS.register(meb);
 	}
 }

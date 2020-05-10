@@ -8,7 +8,6 @@ import com.mntchkn.max.MaxsBlocks;
 import com.mntchkn.will.WillsBlocks;
 
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -21,7 +20,6 @@ public class Main {
 	public Main() {
 		LOGGER.debug(">>>>>>>>>> Initiating Mountain Chicken <<<<<<<<<<<");
 		
-		final ModLoadingContext mlc = ModLoadingContext.get();
 		final IEventBus meb = FMLJavaModLoadingContext.get().getModEventBus();
 		
 		CamsBlocks.BLOCKS.register(meb);

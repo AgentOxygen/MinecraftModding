@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "mntchkn:corundum_ore_block"
+    },
+    "title": {
+      "translate": "advancements.story.root.title"
+    },
+    "description": {
+      "translate": "advancements.story.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dirt"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dirt"
+    ]
+  ]
+}

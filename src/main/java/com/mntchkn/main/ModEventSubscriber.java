@@ -29,7 +29,6 @@ public final class ModEventSubscriber {
 		MaxsItems.registerItems(event);
 	}
 	
-	
 	@SubscribeEvent
 	public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
 		CamsOreGen.generateOre();

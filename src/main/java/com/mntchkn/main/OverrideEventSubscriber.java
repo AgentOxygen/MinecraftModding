@@ -6,9 +6,14 @@ import java.util.Iterator;
 import java.util.Set;
 
 import net.minecraft.advancements.Advancement;
+import net.minecraft.block.Blocks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.Explosion;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent.LoggedInEvent;
-import net.minecraftforge.client.event.GuiOpenEvent;
+import net.minecraftforge.event.TickEvent.WorldTickEvent;
+import net.minecraftforge.event.entity.ProjectileImpactEvent.Arrow;
+import net.minecraftforge.event.world.BlockEvent.EntityPlaceEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -58,7 +63,4 @@ public class OverrideEventSubscriber {
 			player_stats.add(new PlayerStats(event.getPlayer().getName().toString()));
 		}
 	}
-	
-	//Check guis
-	
 }

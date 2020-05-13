@@ -18,7 +18,7 @@ public class CamsBlocks {
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Main.MODID);
 	
 	// List of blocks to be added, registry objects contain information necessary for producing block
-	public static final RegistryObject<Block> peat_ore = BLOCKS.register("peat_ore_block", () -> new Block(Block.Properties.create(Material.EARTH).harvestTool(ToolType.SHOVEL).harvestLevel(0).hardnessAndResistance(0.5F).sound(SoundType.GROUND)));
+	public static final RegistryObject<Block> peat_ore = BLOCKS.register("peat_ore_block", () -> new Block(Block.Properties.create(Material.EARTH).harvestLevel(0).hardnessAndResistance(0.5F).sound(SoundType.GROUND)));
 	public static final RegistryObject<Block> anthracite_ore = BLOCKS.register("anthracite_coal_ore_block", () -> new Block(Block.Properties.create(Material.IRON).harvestTool(ToolType.PICKAXE).harvestLevel(2).hardnessAndResistance(3.0F, 3.0F)));
 	public static final RegistryObject<Block> bituminous_coal_ore = BLOCKS.register("bituminous_coal_ore_block", () -> new Block(Block.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).harvestLevel(1).hardnessAndResistance(3.0F, 3.0F)));
 	public static final RegistryObject<Block> corundum_ore = BLOCKS.register("corundum_ore_block", () -> new Block(Block.Properties.create(Material.IRON).harvestTool(ToolType.PICKAXE).harvestLevel(1).hardnessAndResistance(3.0F, 3.0F)));

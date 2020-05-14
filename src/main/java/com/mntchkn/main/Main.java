@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.mntchkn.cam.CamsBlocks;
+import com.mntchkn.cam.CamsItems;
 import com.mntchkn.max.MaxsBlocks;
 import com.mntchkn.will.WillsBlocks;
 
@@ -25,9 +26,12 @@ public class Main {
 		// Obtains mod's main event bus
 		final IEventBus meb = FMLJavaModLoadingContext.get().getModEventBus();
 		
-		// Registers all deferred block registers
+		// Register all deferred block registers
 		CamsBlocks.BLOCKS.register(meb);
 		WillsBlocks.BLOCKS.register(meb);
 		MaxsBlocks.BLOCKS.register(meb);
+		
+		// Register all deferred item registers
+		CamsItems.ITEMS.register(meb);
 	}
 }

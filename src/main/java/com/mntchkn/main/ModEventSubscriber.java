@@ -1,18 +1,22 @@
 package com.mntchkn.main;
 
-import com.mntchkn.cam.CamsItems;
+import com.mntchkn.cam.CamsBlocks;
 import com.mntchkn.cam.CamsOreGen;
-import com.mntchkn.max.MaxsItems;
+import com.mntchkn.init.ModItemGroups;
+import com.mntchkn.max.MaxsBlocks;
 import com.mntchkn.max.MaxsOreGen;
-import com.mntchkn.will.WillsItems;
+import com.mntchkn.will.WillsBlocks;
 import com.mntchkn.will.WillsOreGen;
 
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
+import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 /** 
@@ -22,13 +26,31 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 @EventBusSubscriber(modid = Main.MODID, bus = EventBusSubscriber.Bus.MOD)
 public final class ModEventSubscriber {
 	
+	// Registers block items for all registered blocks
 	@SubscribeEvent
-	public static void onRegisterItems(RegistryEvent.Register<Item> event) {	
-		// Registers all items by passing registry event to multiple classes
-		// Allows for better modularity (less github conflicts)
-		CamsItems.registerItems(event);
-		WillsItems.registerItems(event);
-		MaxsItems.registerItems(event);
+	public static void onRegisterBlockItems(final RegistryEvent.Register<Item> event) {
+		final IForgeRegistry<Item> registry = event.getRegistry();
+		
+		// Creates and registers block items from specified registers
+		CamsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+				final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
+				final BlockItem blockItem = new BlockItem(block, properties);
+				blockItem.setRegistryName(block.getRegistryName());
+				registry.register(blockItem);
+				});
+		WillsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+			final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
+			final BlockItem blockItem = new BlockItem(block, properties);
+			blockItem.setRegistryName(block.getRegistryName());
+			registry.register(blockItem);
+			});
+		MaxsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+			final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
+			final BlockItem blockItem = new BlockItem(block, properties);
+			blockItem.setRegistryName(block.getRegistryName());
+			registry.register(blockItem);
+			});
+		
 	}
 	
 	@SubscribeEvent

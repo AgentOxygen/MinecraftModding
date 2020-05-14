@@ -14,6 +14,9 @@ import net.minecraftforge.fml.RegistryObject;
  */
 public class CamsItems {
 	
+	/**
+	 * Registers included items to provided Registry Event
+	 */
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		
 		// Add Block Items (blocks do not have items by default)

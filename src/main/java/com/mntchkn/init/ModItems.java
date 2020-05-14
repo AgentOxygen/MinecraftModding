@@ -5,7 +5,8 @@ import com.mntchkn.main.Main;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;
 
-/* Creates tab for mod items/blocks
+/** 
+ * Objects to be used for icon in creative tabs
  */
 @ObjectHolder(Main.MODID)
 public class ModItems {

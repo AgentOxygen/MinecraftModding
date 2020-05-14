@@ -14,14 +14,18 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(Main.MODID)
 public class Main {
 	
+	// Global mod identifier, use for all requests of "MODID"
 	public static final String MODID = "mntchkn";
+	// Console output logger, use instead of system output
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
 	public Main() {
 		LOGGER.debug(">>>>>>>>>> Initiating Mountain Chicken <<<<<<<<<<<");
 		
+		// Obtains mod's main event bus
 		final IEventBus meb = FMLJavaModLoadingContext.get().getModEventBus();
 		
+		// Registers all deferred block registers
 		CamsBlocks.BLOCKS.register(meb);
 		WillsBlocks.BLOCKS.register(meb);
 		MaxsBlocks.BLOCKS.register(meb);

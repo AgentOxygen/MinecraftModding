@@ -36,7 +36,9 @@ public class CamsOreGen {
 	private static ConfiguredPlacement<CountRangeConfig> topaz_config = Placement.COUNT_RANGE.func_227446_a_(new CountRangeConfig(4, 0, 0, 24));
 	private static ConfiguredPlacement<CountRangeConfig> uraninite_config = Placement.COUNT_RANGE.func_227446_a_(new CountRangeConfig(3, 0, 0, 256));
 
-	// Method for modifying world biome ore generation
+	/** 
+	 * Modifies each biome's world gen profile by clearing vanilla spawns and adding in mod-specific features/ores.
+	 */
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
 			// Clear Vanilla Ores

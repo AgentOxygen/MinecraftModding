@@ -9,7 +9,8 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-/*
+
+/**
  *  Holds all registry objects for blocks added by Cameron
  */
 public class CamsBlocks {

@@ -1,11 +1,14 @@
 package com.mntchkn.cam;
 
 
-/* Saves all data to specified player
+/**
+ * Saves all data to specified player
  * Can be added to a global list.
  */
 public class PlayerDataPackage {
-	// Player unique identifier
+	/**
+	 * User name of player
+	 */
 	private String player_id;
 			
 	// Skills

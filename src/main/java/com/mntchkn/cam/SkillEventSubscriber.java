@@ -8,13 +8,15 @@ import net.minecraftforge.client.event.ClientPlayerNetworkEvent.LoggedInEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-/* 
+/** 
  * Main class for player skills.
  */
 @EventBusSubscriber(modid = Main.MODID, bus = EventBusSubscriber.Bus.FORGE)
 public class SkillEventSubscriber {
 	
-	// Global Player Stats list
+	/** 
+	 * Global player stats list, contains all player data packages.
+	 */
 	public static ArrayList<PlayerDataPackage> player_stats = new ArrayList<PlayerDataPackage>();
 	
 	@SubscribeEvent

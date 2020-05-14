@@ -33,11 +33,11 @@ public final class ModEventSubscriber {
 		
 		// Creates and registers block items from specified registers
 		CamsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-				final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
-				final BlockItem blockItem = new BlockItem(block, properties);
-				blockItem.setRegistryName(block.getRegistryName());
-				registry.register(blockItem);
-				});
+			final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
+			final BlockItem blockItem = new BlockItem(block, properties);
+			blockItem.setRegistryName(block.getRegistryName());
+			registry.register(blockItem);
+			});
 		WillsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
 			final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
 			final BlockItem blockItem = new BlockItem(block, properties);

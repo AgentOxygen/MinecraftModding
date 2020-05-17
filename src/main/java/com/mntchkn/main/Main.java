@@ -38,7 +38,7 @@ public class Main {
 	/**
 	 * Outputs to logger.
 	 */
-	public void out(String output) {
+	public static void out(String output) {
 		Main.LOGGER.debug(output);
 	}
 }

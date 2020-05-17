@@ -3,8 +3,6 @@ package com.mntchkn.main;
 import com.mntchkn.cam.CamsBlocks;
 import com.mntchkn.cam.CamsOreGen;
 import com.mntchkn.init.ModItemGroups;
-import com.mntchkn.max.MaxsBlocks;
-import com.mntchkn.max.MaxsOreGen;
 import com.mntchkn.will.WillsBlocks;
 import com.mntchkn.will.WillsOreGen;
 
@@ -44,13 +42,7 @@ public final class ModEventSubscriber {
 			blockItem.setRegistryName(block.getRegistryName());
 			registry.register(blockItem);
 			});
-		MaxsBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-			final Item.Properties properties = new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP);
-			final BlockItem blockItem = new BlockItem(block, properties);
-			blockItem.setRegistryName(block.getRegistryName());
-			registry.register(blockItem);
-			});
-		
+
 	}
 	
 	@SubscribeEvent
@@ -58,7 +50,6 @@ public final class ModEventSubscriber {
 		// Modifies world gen configurations, needs to happen before world gen is called.
 		CamsOreGen.generateOre();
 		WillsOreGen.generateOre();
-		MaxsOreGen.generateOre();
 	}
 	
 	/**

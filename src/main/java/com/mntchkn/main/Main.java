@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.mntchkn.cam.CamsBlocks;
 import com.mntchkn.cam.CamsItems;
-import com.mntchkn.max.MaxsBlocks;
 import com.mntchkn.will.WillsBlocks;
+import com.mntchkn.will.WillsItems;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -29,10 +29,10 @@ public class Main {
 		// Register all deferred block registers
 		CamsBlocks.BLOCKS.register(meb);
 		WillsBlocks.BLOCKS.register(meb);
-		MaxsBlocks.BLOCKS.register(meb);
 		
 		// Register all deferred item registers
 		CamsItems.ITEMS.register(meb);
+		WillsItems.ITEMS.register(meb);
 	}
 	
 	/**

@@ -34,4 +34,11 @@ public class Main {
 		// Register all deferred item registers
 		CamsItems.ITEMS.register(meb);
 	}
+	
+	/**
+	 * Outputs to logger.
+	 */
+	public void out(String output) {
+		Main.LOGGER.debug(output);
+	}
 }

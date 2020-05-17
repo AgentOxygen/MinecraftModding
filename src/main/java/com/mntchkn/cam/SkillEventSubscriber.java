@@ -43,8 +43,8 @@ public class SkillEventSubscriber {
 	 */
 	@SubscribeEvent
 	public static void onGuiOpen(GuiOpenEvent event) {
-		if(event.getGui().getClass().equals(AdvancementsScreen.class)) {
-			Main.LOGGER.debug("Opened advancements!");
-		}
+		//if(event.getGui().getClass().equals(AdvancementsScreen.class)) {
+			//Main.LOGGER.debug("Opened advancements!");
+		//}
 	}
 }

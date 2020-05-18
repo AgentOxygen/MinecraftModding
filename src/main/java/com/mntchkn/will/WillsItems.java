@@ -1,5 +1,6 @@
 package com.mntchkn.will;
 
+import com.mntchkn.init.ModEntities;
 import com.mntchkn.init.ModItemGroups;
 import com.mntchkn.main.Main;
 
@@ -20,7 +21,7 @@ public class WillsItems {
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Main.MODID);
 	
 	//Spawn Eggs
-	public static final RegistryObject<Item> Wills_Spawn_Egg = ITEMS.register("wills_spawn_egg", () -> new SpawnEggItem(EntityType.HORSE, 12623485, 15656192, (new Item.Properties()).group(ItemGroup.MISC)));
+	public static final RegistryObject<Item> Wills_Spawn_Egg = ITEMS.register("wills_spawn_egg_item", () -> new SpawnEggItem(ModEntities.TEST_ENTITY, 16733525, 16733525, (new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
 
 	
 }

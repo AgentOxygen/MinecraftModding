@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 import com.mntchkn.main.Main;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.advancements.AdvancementsScreen;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent.LoggedInEvent;
 import net.minecraftforge.client.event.GuiOpenEvent;
+import net.minecraftforge.event.world.WorldEvent.Save;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
@@ -26,16 +25,23 @@ public class SkillEventSubscriber {
 	 * Creates player data package for new players.
 	 */
 	@SubscribeEvent
-	public static void onPlayerLogin(LoggedInEvent event) {
+	public static void createPlayerDataPackage(LoggedInEvent event) {
 		boolean new_player = true;
 		for(int i = 0; i < player_stats.size(); i++) {
 			if(event.getPlayer().getName().toString() == player_stats.get(i).getPlayerName()) {
 				new_player = false;
+				Main.out("Not new player!");
 			}
 		}
 		if(new_player) {
 			player_stats.add(new PlayerDataPackage(event.getPlayer().getName().toString()));
+			Main.out("IS new player!");
 		}
+	}
+	
+	@SubscribeEvent
+	public static void savePlayerDataPackage(Save event) {
+		
 	}
 	
 	/**

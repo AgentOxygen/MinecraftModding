@@ -15,6 +15,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
@@ -71,11 +72,7 @@ public final class ModEventSubscriber {
 
 	@SubscribeEvent
 	public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event) {
-		event.getRegistry().registerAll(
-				ModEntities.TEST_ENTITY
-		);
-		
-		ModEntities.registerEntityWorldSpawn();
+		ModEntities.registerEntities(event);
 	}
 	
 	public static ResourceLocation location(String name) {

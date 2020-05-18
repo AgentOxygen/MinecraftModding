@@ -20,8 +20,8 @@ public class WillsItems {
 	
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Main.MODID);
 	
-	//Spawn Eggs
-	public static final RegistryObject<Item> Wills_Spawn_Egg = ITEMS.register("wills_spawn_egg_item", () -> new SpawnEggItem(ModEntities.TEST_ENTITY, 16733525, 16733525, (new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
+	//Spawn Eggs <- entities are registered AFTER items, so you get a null pointer. Check ModSpawnEggItem for work around later
+	//public static final RegistryObject<Item> Wills_Spawn_Egg = ITEMS.register("wills_spawn_egg_item", () -> new SpawnEggItem(ModEntities.camel.get(), 16733525, 16733525, (new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
 
 	
 }

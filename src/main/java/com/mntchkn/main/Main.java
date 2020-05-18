@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.mntchkn.cam.CamsBlocks;
 import com.mntchkn.cam.CamsItems;
+import com.mntchkn.init.ModEntities;
 import com.mntchkn.will.WillsBlocks;
 import com.mntchkn.will.WillsItems;
 
@@ -33,6 +34,9 @@ public class Main {
 		// Register all deferred item registers
 		CamsItems.ITEMS.register(meb);
 		WillsItems.ITEMS.register(meb);
+		
+		// Register all deferred entity registers
+		ModEntities.ENTITIES.register(meb);
 	}
 	
 	/**

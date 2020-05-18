@@ -2,12 +2,10 @@ package com.mntchkn.main;
 
 import com.mntchkn.cam.CamsBlocks;
 import com.mntchkn.cam.CamsOreGen;
-import com.mntchkn.init.ModEntities;
 import com.mntchkn.init.ModItemGroups;
 import com.mntchkn.will.WillsBlocks;
 import com.mntchkn.will.WillsOreGen;
 
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -15,7 +13,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
@@ -68,11 +65,6 @@ public final class ModEventSubscriber {
 	public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final ResourceLocation registryName) {
 		entry.setRegistryName(registryName);
 		return entry;
-	}
-
-	@SubscribeEvent
-	public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event) {
-		ModEntities.registerEntities(event);
 	}
 	
 	public static ResourceLocation location(String name) {

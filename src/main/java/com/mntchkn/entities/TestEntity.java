@@ -9,8 +9,8 @@ import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.world.World;
 
-@SuppressWarnings("unchecked")
 public class TestEntity extends CreatureEntity{
+	@SuppressWarnings("unchecked")
 	public TestEntity(EntityType<? extends CreatureEntity> type, World worldIn) {
 		super((EntityType<? extends CreatureEntity>) ModEntities.TEST_ENTITY, worldIn);
 	}
